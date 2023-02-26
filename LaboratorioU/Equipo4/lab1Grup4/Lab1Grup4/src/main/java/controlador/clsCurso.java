@@ -56,13 +56,10 @@ public class clsCurso {
     }
 
     public clsCurso() {
-    }
-
-    
-
-    
+    }    
     
     //Metodos de acceso a la capa controlador
+    /*
     public clsCurso getBuscarInformacionAplicacionPorNombre(clsCurso aplicacion)
     {
         daoCurso daocurso = new daoCurso();
@@ -71,7 +68,7 @@ public class clsCurso {
     public clsCurso getBuscarInformacionAplicacionPorId(clsCurso aplicacion)
     {
         daoCurso daocurso = new daoCurso();
-        return daocurso.consultaAplicacionesPorId(aplicacion);
+        return daocurso.consultaCusosPorId(aplicacion);
     }    
     public List<clsCurso> getListadoAplicaciones()
     {
@@ -93,5 +90,5 @@ public class clsCurso {
     {
         daoCurso daocurso = new daoCurso();
         return daocurso.actualizaAplicaciones(aplicacion);
-    }              
+    }              */
 }
