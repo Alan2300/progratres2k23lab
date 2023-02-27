@@ -10,34 +10,28 @@ import modelo.daoCarreras;
  * @author Usuario
  */
 public class clsCarreras {
-    private String codigo_carrera;
+    private int codigo_carrera;
     private String nombre_carrera;
-    private String codigo_facultad;
+    //private int codigo_facultad;
     private String estatus_carrera;
 
     public clsCarreras() {
     }
 
-    public clsCarreras(String codigo_carrera, String nombre_carrera) {
+    public clsCarreras(int codigo_carrera, String nombre_carrera) {
         this.codigo_carrera = codigo_carrera;
         this.nombre_carrera = nombre_carrera;
     }
 
-    public clsCarreras(String codigo_carrera) {
+    public clsCarreras(int codigo_carrera) {
         this.codigo_carrera = codigo_carrera;
     }
 
-    public clsCarreras(String codigo_carrera, String nombre_carrera, String codigo_facultad) {
-        this.codigo_carrera = codigo_carrera;
-        this.nombre_carrera = nombre_carrera;
-        this.codigo_facultad = codigo_facultad;
-    }
-
-    public String getCodigo_carrera() {
+    public int getCodigo_carrera() {
         return codigo_carrera;
     }
 
-    public void setCodigo_carrera(String codigo_carrera) {
+    public void setCodigo_carrera(int codigo_carrera) {
         this.codigo_carrera = codigo_carrera;
     }
 
@@ -48,7 +42,7 @@ public class clsCarreras {
     public void setNombre_carrera(String nombre_carrera) {
         this.nombre_carrera = nombre_carrera;
     }
-
+/*
     public String getCodigo_facultad() {
         return codigo_facultad;
     }
@@ -56,7 +50,7 @@ public class clsCarreras {
     public void setCodigo_facultad(String codigo_facultad) {
         this.codigo_facultad = codigo_facultad;
     }
-
+*/
     public String getEstatus_carrera() {
         return estatus_carrera;
     }
@@ -67,7 +61,7 @@ public class clsCarreras {
 
     @Override
     public String toString() {
-        return "clsCarreras{" + "codigo_carrera=" + codigo_carrera + ", nombre_carrera=" + nombre_carrera + ", codigo_facultad=" + codigo_facultad + ", estatus_carrera=" + estatus_carrera + '}';
+        return "clsCarreras{" + "codigo_carrera=" + codigo_carrera + ", nombre_carrera=" + nombre_carrera + ", estatus_carrera=" + estatus_carrera + '}';
     }
     //Metodos de acceso a la capa controlador
     public clsCarreras getBuscarInformacionCarrerasPorNombre(clsCarreras carreras)

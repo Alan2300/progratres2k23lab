@@ -11,33 +11,33 @@ import modelo.daoFacultades;
  * @author Inkunzy
  */
 public class clsFacultades {
-    private String codigo_facultad;
+    private int codigo_facultad;
     private String nombre_facultad;
     private String estatus_facultad;
 
     public clsFacultades() {
     }
 
-    public clsFacultades(String codigo_facultad) {
+    public clsFacultades(int codigo_facultad) {
         this.codigo_facultad = codigo_facultad;
     }
 
-    public clsFacultades(String codigo_facultad, String nombre_facultad) {
+    public clsFacultades(int codigo_facultad, String nombre_facultad) {
         this.codigo_facultad = codigo_facultad;
         this.nombre_facultad = nombre_facultad;
     }
 
-    public clsFacultades(String codigo_facultad, String nombre_facultad, String estatus_facultad) {
+    public clsFacultades(int codigo_facultad, String nombre_facultad, String estatus_facultad) {
         this.codigo_facultad = codigo_facultad;
         this.nombre_facultad = nombre_facultad;
         this.estatus_facultad = estatus_facultad;
     }
 
-    public String getCodigo_facultad() {
+    public int getCodigo_facultad() {
         return codigo_facultad;
     }
 
-    public void setCodigo_facultad(String codigo_facultad) {
+    public void setCodigo_facultad(int codigo_facultad) {
         this.codigo_facultad = codigo_facultad;
     }
 

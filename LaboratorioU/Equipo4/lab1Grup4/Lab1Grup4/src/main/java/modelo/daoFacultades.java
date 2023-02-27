@@ -41,7 +41,7 @@ public class daoFacultades {
             stmt = conn.prepareStatement(SQL_SELECT);
             rs = stmt.executeQuery();
             while (rs.next()) {
-                String codigo = rs.getString("codigo_facultad");
+                int codigo = rs.getInt("codigo_facultad");
                 String nombre = rs.getString("nombre_facultad");
                 String estatus = rs.getString("estatus_facultad");
                 clsFacultades facultad = new clsFacultades();
@@ -93,7 +93,7 @@ public class daoFacultades {
             stmt = conn.prepareStatement(SQL_UPDATE);
             stmt.setString(1, facultad.getNombre_facultad());
             stmt.setString(2, facultad.getEstatus_facultad());
-            stmt.setString(3, facultad.getCodigo_facultad());
+            stmt.setInt(3, facultad.getCodigo_facultad());
 
             rows = stmt.executeUpdate();
             System.out.println("Registros actualizado:" + rows);
@@ -117,7 +117,7 @@ public class daoFacultades {
             conn = Conexion.getConnection();
             System.out.println("Ejecutando query:" + SQL_DELETE);
             stmt = conn.prepareStatement(SQL_DELETE);
-            stmt.setString(1, facultad.getCodigo_facultad());
+            stmt.setInt(1, facultad.getCodigo_facultad());
             rows = stmt.executeUpdate();
             System.out.println("Registros eliminados:" + rows);
         } catch (SQLException ex) {
@@ -142,7 +142,7 @@ public class daoFacultades {
             stmt.setString(1, facultad.getNombre_facultad());
             rs = stmt.executeQuery();
             while (rs.next()) {
-                String codigo = rs.getString("codigo_facultad");
+                int codigo = rs.getInt("codigo_facultad");
                 String nombre = rs.getString("nombre_facultad");
                 String estatus = rs.getString("estatus_facultad");
 
@@ -176,7 +176,7 @@ public class daoFacultades {
             //stmt.setString(1, usuario.getNombreUsuario());
             rs = stmt.executeQuery();
             while (rs.next()) {
-                String codigo = rs.getString("codigo_facultad");
+                int codigo = rs.getInt("codigo_facultad");
                 String nombre = rs.getString("nombre_facultad");
                 String estatus = rs.getString("estatus_facultad");
 
